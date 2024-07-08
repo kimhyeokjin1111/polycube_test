@@ -26,6 +26,13 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    //h2 database
+    runtimeOnly 'com.h2database:h2'
+    //JPA 기능
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    //BATCH 기능
+    implementation 'org.springframework.boot:spring-boot-starter-batch'
+    testImplementation 'org.springframework.batch:spring-batch-test'
 }
 
 tasks.named('test') {
